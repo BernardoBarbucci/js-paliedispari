@@ -15,8 +15,8 @@ function randomNumb1to5() {
 const randomNumber = randomNumb1to5();
 console.log(randomNumber);
 // Sommiamo i due numeri
-let numbSum = (userNumb + randomNumber);
-console.log(numbSum); 
+let numbSum = userNumb + randomNumber;
+console.log('La somma del tuo numero piu\' quello del computer è: ', numbSum); 
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando un'altra funzione)
 
 // Dichiariamo chi ha vinto.
