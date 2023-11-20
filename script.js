@@ -3,7 +3,14 @@
 let evenOrOdd = prompt('Scegli tra pari o dispari: ');
 let userNumb =  prompt('Inserisci un numero tra 1 e 5: ');
 // Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
-
+function randomNumb1to5() {
+    // genera un numero a caso tra 0 e 1
+    const numbGen0to1 = Math.random();
+    // *5 per raggiungere la cifra richiesta
+    const scaledNumb = numbGen0to1 * 5;
+    const numbResult = Math.floor(scaledNumb) + 1;
+    return numbResult;
+}
 // Sommiamo i due numeri
 
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando un'altra funzione)
