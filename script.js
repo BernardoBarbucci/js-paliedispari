@@ -1,7 +1,7 @@
 //      Pari e Dispari:
 // L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 let evenOrOdd = prompt('Scegli tra pari o dispari: ');
-let userNumb =  prompt('Inserisci un numero tra 1 e 5: ');
+let userNumb =  parseInt(prompt('Inserisci un numero tra 1 e 5: '));
 // Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
 function randomNumb1to5() {
     // genera un numero a caso tra 0 e 1
@@ -15,7 +15,8 @@ function randomNumb1to5() {
 const randomNumber = randomNumb1to5();
 console.log(randomNumber);
 // Sommiamo i due numeri
-
+let numbSum = (userNumb + randomNumber);
+console.log(numbSum); 
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando un'altra funzione)
 
 // Dichiariamo chi ha vinto.
