@@ -11,6 +11,9 @@ function randomNumb1to5() {
     const numbResult = Math.floor(scaledNumb) + 1;
     return numbResult;
 }
+
+const randomNumber = randomNumb1to5();
+console.log(randomNumber);
 // Sommiamo i due numeri
 
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando un'altra funzione)
