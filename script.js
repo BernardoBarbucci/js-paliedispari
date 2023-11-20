@@ -27,17 +27,32 @@ const computerChoice = evenOrOdd(randomNumber);
 function whoWon(userChoice, computerChoice) {
     return (userChoice === computerChoice) ? 'Hai vinto!' : 'Hai perso!';
 }
-
 const result = whoWon(userChoiceEvenOrOdd, computerChoice);
 console.log(result);
-
-
-
-
-
 
 
 //      Palidroma:
 // Chiedere all’utente di inserire una parola
 // Creare una funzione per capire se la parola inserita è palindroma
 // E' vietato usare split(), reverse() e simili.
+
+const userWord = prompt('inserisci una parola: ').toLowerCase();
+
+function paliWordCheck (word) {
+    const length = word.length;
+    // ciclo for per calcolare e confrontare i caratteri dall'ultimo al primo
+    for (let i = 0; i < Math.floor(length / 2); i++) {
+        if (word[i] !== [word.length -1 - i]) {
+            // risultato false se non è palindroma
+            return false; 
+        }
+    }
+    // risultato true se è palindroma
+    return true;
+}
+
+if (paliWordCheck(userWord)) {
+    console.log('La parola inserita è palindroma');
+} else {
+    console.log('La parola non è palindroma');
+}
