@@ -23,6 +23,11 @@ function evenOrOdd (number) {
 }
 console.log(`La somma è ${evenOrOdd(numbSum)}.`);
 // Dichiariamo chi ha vinto.
+function whoWon(userChoice, randomNumb1to5) {
+    return (userChoice === randomNumb1to5) ? 'Hai vinto!' : 'Hai perso!';
+}
+const result = whoWon(userChoiceEvenOrOdd, randomNumb1to5);
+console.log(result);
 
 
 
